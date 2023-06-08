@@ -1,0 +1,4 @@
+markdown-it-py[linkify,plugins]
+feedgenerator
+rich
+Pygments

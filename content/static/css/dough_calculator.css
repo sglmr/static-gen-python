@@ -1,0 +1,60 @@
+/* Print Area CSS */
+@media print {
+
+    * {
+        visibility: hidden;
+    }
+
+    .printable {
+        visibility: visible;
+        position: absolute;
+        top: -1em;
+        left: 1em;
+    }
+
+    .printable * {
+        visibility: visible;
+    }
+}
+
+
+/* Table CSS */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+table th {
+    text-align: left;
+    border-bottom: 2px solid;
+}
+
+tr td {
+    border-bottom: 1px solid grey;
+}
+
+th.weight,
+td.weight {
+    text-align: right;
+    font-weight: bolder;
+}
+
+td {
+    margin: .25em;
+    margin-right: 1em;
+    margin-left: 1em;
+    width: auto;
+}
+
+/* Input CSS */
+input {
+    border: none;
+    display: inline;
+    width: 5em;
+}
+
+input:hover,
+input[type=number]:focus {
+    background-color: #ffff9f;
+}
